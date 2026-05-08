@@ -26,24 +26,29 @@ brain-template/
     suppliers/       one page per factory      (with worked example)
     channels/        amazon-us, amazon-uk, tiktok-shop-us, shopify (pre-stubbed)
     decisions/       irreversible calls log    (with worked example)
-    playbooks/       prime-day, bfcm, restock-cycle, new-launch
+    playbooks/       prime-day, bfcm, q5, restock-cycle, new-launch, review-crisis
     concepts/        cm3, cash cycle, tacos, fba fees, restock formula, review velocity
-    daily/           the operator daily ritual
-    team/            internal, china sourcing, US VA, agencies
+    daily/           the operator daily ritual (with worked example)
+    team/            internal, china sourcing, US VA, agencies (with worked example)
     ip/              trademarks, patents, compliance
-    finance/         monthly close, cash plan, restock budget
+    finance/         monthly close, cash plan, restock budget (with worked example)
   raw/               unfiltered inbox
-  claude/skills/
+  .claude/skills/
     sku-audit/       /sku-audit {ASIN}
     restock-memo/    /restock-memo {ASIN} --weeks=12
     wbr/             /wbr --week=YYYY-Wxx
     onestar-themes/  /onestar-themes {ASIN} --since=90d
+  CLAUDE.md          vault-context file Claude Code reads on session start
+  QUICKSTART.md      60-minute first-time guide
   setup.sh           one-line installer
+  LICENSE            MIT
 ```
 
 ---
 
-## Quick start (3 minutes)
+## Quick start
+
+For a full handhold, read **[QUICKSTART.md](QUICKSTART.md)** - the 60-minute first-time guide. The TL;DR is below.
 
 ### Option A - Use this template (recommended)
 1. Click the green **"Use this template"** button at the top of this repo on GitHub.
@@ -81,7 +86,7 @@ That's the loop. Every time something happens, you know which page it belongs on
 
 ## Claude Code integration
 
-Open Claude Code in the vault root. The four shipped skills are auto-discovered from `claude/skills/`:
+Open Claude Code in the vault root. The four shipped skills are auto-discovered from `.claude/skills/`. Claude Code also reads `CLAUDE.md` at the vault root on every session, so it understands the structure without prompting.
 
 | Command | What it does |
 |---|---|
@@ -90,7 +95,7 @@ Open Claude Code in the vault root. The four shipped skills are auto-discovered 
 | `/wbr --week=YYYY-Wxx` | Build the Weekly Business Review across all active SKUs and channels |
 | `/onestar-themes {ASIN} --since=90d` | Cluster recent low-star reviews, update the SKU's tracker block |
 
-Skills work read-only on frontmatter by default. To pull live SP-API data (orders, ads, reviews, inventory), wire up the `mcp-amazon` MCP server. See `claude/README.md` for setup.
+Skills work read-only on frontmatter by default. To pull live SP-API data (orders, ads, reviews, inventory), wire up the `mcp-amazon` MCP server. See `.claude/README.md` for setup.
 
 ---
 
@@ -121,7 +126,7 @@ If you're 9-figures, this is a starting point. Fork it, customise hard.
 - v1.1: live `mcp-amazon` reference build (SP-API + Ads API hooks)
 - v1.2: TikTok Shop MCP companion
 - v1.3: Shopify Admin MCP companion
-- v1.4: Q5 + review-crisis playbooks
+- v1.4: Linux + Windows installer
 - v1.5: visual builder for new SKU pages
 
 ---

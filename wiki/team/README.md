@@ -23,3 +23,8 @@ Two reasons:
 
 ## Status field
 Use `active`, `paused`, or `former`. Don't delete former contractors, you'll need their context if they come back or if there's a dispute.
+
+---
+
+## Worked example
+`EXAMPLE-china-sourcing-lily-chen.md` - a populated person page for a key supplier contact, with scope, working pattern, and recent context.

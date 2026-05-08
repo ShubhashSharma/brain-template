@@ -24,3 +24,8 @@ Numbers in this folder must reconcile with your bank statements and your channel
 - Monthly close: by the 5th of each month for the prior month.
 - Cash plan: at the start of each quarter, then adjust if a major variance hits.
 - Restock plan: at the start of each month, refreshed weekly.
+
+---
+
+## Worked example
+`EXAMPLE-monthly-close-2026-04.md` - a populated monthly close showing the full P&L, channel split, cash position, variance against forecast.

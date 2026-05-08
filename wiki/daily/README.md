@@ -17,6 +17,11 @@ One file per day, named `YYYY-MM-DD.md`. Use `_templates/operator-daily.md`.
 
 ---
 
+## Worked example
+`EXAMPLE-2026-05-09.md` - a populated daily note showing what the morning ritual looks like in actual use.
+
+---
+
 ## Why this folder beats a Notion daily
 - Plain text. Searchable forever. No vendor lock-in.
 - Linked. Every SKU you mention is a backlink.
