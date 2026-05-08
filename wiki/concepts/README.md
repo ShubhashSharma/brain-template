@@ -1,12 +1,27 @@
+---
+type: folder-readme
+---
+
 # Concepts
 
-Reusable thinking. Patterns, frameworks, mental models you find yourself returning to.
+The operator vocabulary used everywhere else in the brain.
 
-Examples:
-- `inflection-point.md`
-- `jagged-intelligence.md`
-- `unit-economics.md`
-- `cash-conversion-cycle.md`
-- `prospect-refuge-theory.md`
+---
 
-When you find yourself explaining the same idea twice, write it as a concept once and link to it forever after. This is the highest-leverage folder in your brain.
+## Shipped concepts
+- `cm1-cm2-cm3.md` - true contribution margin, three layers
+- `cash-conversion-cycle.md` - where your cash is trapped
+- `tacos-vs-acos.md` - why TACoS is the only ad metric that matters
+- `fba-fee-tiers.md` - size and weight bands
+- `restock-formula.md` - how `/restock-memo` actually decides
+- `review-velocity.md` - the leading indicator that beats BSR
+
+---
+
+## When to add your own
+Any time you find yourself explaining a concept to your team for the second time, write a concept page. Then link to it from everywhere it shows up.
+
+---
+
+## Naming
+Lowercase-hyphenated. Match the shape of the existing ones.

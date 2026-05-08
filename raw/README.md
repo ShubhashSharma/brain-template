@@ -1,24 +1,32 @@
+---
+type: folder-readme
+---
+
 # Raw
 
-Unfiltered inputs. Anything that's not yet curated.
+The inbox. Anything that doesn't yet belong in the wiki goes here first.
 
-Examples:
+---
+
+## What lives here
+- Loom dumps before transcription
 - Email exports
-- Slack dumps
-- Meeting transcripts
-- Loom recordings
-- Notion exports
-- Screenshots from your phone
-- Voice memo transcriptions
+- Slack / WhatsApp pastes
+- Voice memo transcripts
+- Call notes you haven't curated yet
+- Random ideas you'll forget if you don't write them down
 
-The rule: **raw goes in fast, curated stays in `wiki/`**. Don't try to organise raw — it's a holding pen. When something in `raw/` proves valuable, summarise/distil it into the appropriate `wiki/` folder, then optionally archive or delete the raw file.
+---
 
-Subfolder suggestion (free-form):
-```
-raw/
-├── _inbox/         ← latest stuff, unsorted
-├── transcripts/
-├── notion-export/
-├── slack-export/
-└── attachments/    ← images / files dragged into notes (see app.json)
-```
+## The rule
+Things in `raw/` are **not yet trusted**. Your future self should not rely on them as fact.
+
+---
+
+## Curation flow
+Once a piece of raw has value, do one of three things:
+1. Move it into the right wiki folder.
+2. Distil one or two facts from it into a wiki page, then archive the raw file.
+3. Delete it.
+
+If a raw file is older than 30 days and you haven't curated it, delete it. It wasn't going to become anything.

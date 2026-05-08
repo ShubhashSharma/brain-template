@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # ---------------------------------------------------------------------------
-# not a square — Brain Template Installer
+# not a square - The Operator's Brain Installer
+#
+# Companion deliverable for Seller Sessions Live 2026:
+#   "Architecting the Amazon Operator's Stack"
 #
 # What this does:
 #   1. Checks prerequisites (Homebrew, Git, GitHub CLI, Obsidian)
@@ -10,8 +13,8 @@
 #   5. (Optional) Wires up Claude Code MCP integration
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/<owner>/brain-template/main/setup.sh | bash
-#   — or —
+#   curl -fsSL https://raw.githubusercontent.com/ShubhashSharma/brain-template/main/setup.sh | bash
+#   - or -
 #   ./setup.sh
 #
 # macOS only. Will warn and exit on Linux/Windows.
@@ -55,8 +58,8 @@ TEMPLATE_OWNER="${TEMPLATE_OWNER:-$TEMPLATE_OWNER_DEFAULT}"
 read -r -p "GitHub template repo [${TEMPLATE_REPO_DEFAULT}]: " TEMPLATE_REPO
 TEMPLATE_REPO="${TEMPLATE_REPO:-$TEMPLATE_REPO_DEFAULT}"
 
-read -r -p "Name for YOUR new vault folder [my-brain]: " VAULT_NAME
-VAULT_NAME="${VAULT_NAME:-my-brain}"
+read -r -p "Name for YOUR new vault folder [my-operator-brain]: " VAULT_NAME
+VAULT_NAME="${VAULT_NAME:-my-operator-brain}"
 
 VAULT_PATH="$HOME/Documents/$VAULT_NAME"
 
@@ -132,7 +135,7 @@ else
     --template "${TEMPLATE_OWNER}/${TEMPLATE_REPO}" \
     --private \
     --clone \
-    --description "My second brain — not a square template"
+    --description "My operator's brain - not a square template"
 
   # gh clones into cwd; move to ~/Documents
   if [[ -d "./$VAULT_NAME" && ! -d "$VAULT_PATH" ]]; then
@@ -208,7 +211,7 @@ Your brain lives at:
 Your GitHub repo:
   ${BOLD}https://github.com/${GH_USER}/${VAULT_NAME}${RESET}
 
-${BOLD}Next steps (manual — 3 minutes):${RESET}
+${BOLD}Next steps (manual, 3 minutes):${RESET}
 
   1. Open Obsidian
   2. Click 'Open another vault' -> 'Open folder as vault' -> select $VAULT_PATH
@@ -220,8 +223,15 @@ ${BOLD}Next steps (manual — 3 minutes):${RESET}
      ${BOLD}$API_KEY${RESET}
      (also saved at $API_KEY_FILE)
   6. Settings -> Templater -> Template folder location -> _templates
-  7. Open the README.md in the vault and start exploring
+  7. Open README.md in the vault, then wiki/skus/EXAMPLE-acme-baby-shampoo-001.md
 
-That's it. Welcome to your second brain.
+${BOLD}First page to fill in:${RESET}
+  Copy _templates/sku.md into wiki/skus/, name it after one of your top SKUs,
+  fill in the frontmatter. Just one. Not all of them.
+
+${BOLD}Then run Claude Code in the vault root:${RESET}
+  /sku-audit {YOUR_ASIN}
+
+Welcome to your operator brain.
 
 EOF

@@ -38,3 +38,20 @@ Desktop.ini
 * 2.md
 * 2.json
 * 2/
+
+# Vault-local secrets
+.api-key.local
+.env
+.env.local
+
+# Vault-local Claude state (don't ship per-user state in template clones)
+.claude/projects/
+.claude/sessions/
+
+# Editors
+.vscode/
+.idea/
+
+# Backups
+*.bak
+*.tmp

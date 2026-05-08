@@ -1,26 +1,30 @@
+---
+type: templates-readme
+---
+
 # Templates
 
-Files in this folder are used by the **Templater** plugin to spin up new notes in one click.
+These are starting blanks for every type of page in this vault. Copy a template, rename it, fill in the frontmatter, link to others.
 
-## Available templates
-
-| File | What it creates |
+| Template | When to use it |
 |---|---|
-| `client-MOC-template.md` | A new client home page with Dataview blocks for sessions, tasks, lessons |
-| `project-MOC-template.md` | Same for an internal project |
-| `context-template.md` | The `context.md` that lives inside each client folder |
-| `session-template.md` | A single work-session note (auto-fills date + parent folder) |
-| `daily-template.md` | A daily roll-up note |
-| `person-template.md` | A person entity in `wiki/entities/people/` |
-| `concept-template.md` | A reusable concept/framework note |
+| `sku.md` | One per parent ASIN. The atomic unit of this brain. |
+| `supplier.md` | One per factory or trader. |
+| `channel.md` | One per sales channel (Amazon US, TikTok Shop US, Shopify, etc). |
+| `decision.md` | Any irreversible call. Price moves, supplier swaps, brand pivots. |
+| `playbook.md` | A repeatable event runbook (Prime Day, BFCM, restock cycle, launch). |
+| `operator-daily.md` | One per day. Yesterday's numbers, OOS list, wins, fires. |
+| `wbr.md` | One per week. Channel deltas, top/bottom SKUs, bets, blockers. |
+| `monthly-close.md` | One per month. Headline P&L, channel split, cash position. |
+| `person.md` | Anyone you work with. Internal team, China sourcing, US VA, agency. |
+| `session.md` | Any meeting or call worth capturing. |
+| `concept.md` | A reusable mental model or formula. CM3, TACoS, restock formula. |
 
-## How to use
+---
 
-1. Settings → Community plugins → enable **Templater**
-2. Settings → Templater → set **Template folder location** to `_templates`
-3. Settings → Templater → assign a hotkey (e.g. `Cmd+Shift+T`) to **Create new note from template**
-4. In any folder, hit the hotkey, pick a template — done.
+## How to use these in Obsidian
+1. Install the **Templater** community plugin.
+2. Settings -> Templater -> Template folder location -> `_templates`.
+3. Create new file -> press Templater hotkey -> pick the template.
 
-## Customise
-
-These are starting points. Edit them to match how you actually work. The `<% ... %>` syntax is Templater — it auto-fills date, folder name, etc. Leave that alone unless you know what you're doing.
+If you do not use Templater yet, just open the template file, copy the body, paste into a new file, and fill it in.
