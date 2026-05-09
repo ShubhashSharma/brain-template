@@ -48,7 +48,7 @@ brain-template/
 
 ## Quick start
 
-For a full handhold, read **[QUICKSTART.md](QUICKSTART.md)** - the 60-minute first-time guide. The TL;DR is below.
+For a full handhold, read **[QUICKSTART.md](QUICKSTART.md)** - the 60-minute first-time guide. For common questions, read **[FAQ.md](FAQ.md)**. The TL;DR is below.
 
 ### Option A - Use this template (recommended)
 1. Click the green **"Use this template"** button at the top of this repo on GitHub.
